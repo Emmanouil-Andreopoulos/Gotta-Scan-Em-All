@@ -82,7 +82,7 @@ body {font-family: Arial;}
 </head>
 <body>
 <input type="text" id="url_link"></input>
-<button type="button" onClick="Check();">Check</button>
+<button type="button" id="Check_btn" onClick="Check();">Check</button>
 <br>
 <br>
 <div class="tab">
@@ -163,6 +163,13 @@ body {font-family: Arial;}
 </div>
 <script>
 document.getElementById("defaultOpen").click();
+document.getElementById("url_link")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("Check_btn").click();
+    }
+});
 </script>
 </body>
 </html>
