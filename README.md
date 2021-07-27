@@ -1,1 +1,1 @@
-# Gotta-Scan-Em-All
+Gotta Scan 'Em All
